@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Cá Nhân</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <header>
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <label for="check__btn" class="bar__btn">
+                    <i class="fas fa-bars bar__icon"></i>
+                </label>
+                <input type="checkbox" id="check__btn" class="check-bar">
+                <label for="check__btn" class="overlay__has-bar"></label> <!--Làm mờ khi dùng bars-->
+                <ul class="list__bar-item">
+                    <label for="check__btn" class="close__btn">
+                        <i class="fas fa-times close__icon"></i>
+                    </label>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Social</a></li>
+                    <li><a href="">#Về tớ</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </header>
+            <div class="overlay"></div>
+            <div class="header__text">
+                <h3>Hi, I am</h3>
+                <h1>Văn Anh</h1>
+                <p>I am a <span class="type"></span></p>
+                <ul class="header__list-icon">
+                    <li class="list__icon-item"><a href=""><i class="fab fa-facebook icon__small"></i></a></li>
+                    <li class="list__icon-item"><a href=""><i class="fab fa-instagram icon__small"></i></a></li>
+                    <li class="list__icon-item"><a href=""><i class="fab fa-google-plus-g icon__small"></i></a></li>
+                    <li class="list__icon-item"><a href=""><i class="fab fa-twitter icon__small"></i></a></li>
+                </ul>
+                <a href="" class="mouse"></a>
+            </div>
+        </div>
+        <div class="about">
+            <div class="about__section-title">
+                <h3>About</h3>
+                <h2>Let me introduce myself.</h2>
+            </div>
+            <div class="about__profile">
+                <div class="about__profile-img">
+                    <img src="./images/img-profile.jpg" alt="">
+                </div>
+                <div class="about__profile-info" id="scroll-bar">
+                    <p>Xin chào mọi người ! Mình là Nguyễn Văn Anh , hiện đang là sinh viên năm 2 trường
+                        Đại Học Duy Tân TP.Đà Nẵng. Hiện tại mình đang nghiên cứu và tìm hiểu về mảng
+                        FrontEnd . Mình tạo ra trang Blog này cũng để thử sức và xem thành quả của mình.
+                        Mình hi vọng blog này sẽ thay đổi kết quả và nhìn thấy được sự tiến bộ này .
+                        Bạn nào có hứng thú về FrontEnd có thể nói nhỏ mình qua Gmail: tuilaanh01@gmail.com
+                        để cùng học tập hoặc làm một thứ gì đó cùng sở thích ! ^^
+                    </p>
+                </div>
+            </div>
+
+            <div class="about__info">
+                <div class="about__info-profile">
+                    <h3 class="info__profile-title">Profile</h3>
+                    <p>Xem qua một số thông tin về mình để hiểu rõ hơn về mình nhé</p>
+                    <ul class="info__profile-list">
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Full Name</h3>
+                            <p>Nguyễn Văn Anh</p>
+                        </li>
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Birth Date</h3>
+                            <p>09 October</p>
+                        </li>
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Job</h3>
+                            <p>Hiện tại vẫn còn đang học :(</p>
+                        </li>
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Website:</h3>
+                            <p>www.itme.com</p>
+                        </li>
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Facebook</h3>
+                            <p>facebook.com/anh0910.net</p>
+                        </li>
+                        <li class="info__profile-list--item">
+                            <h3 class="profile__item-title">Email</h3>
+                            <p>tuilaanh01@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about__info-skill">
+                    <h3 class="info__profile-title">Skill</h3>
+                    <p>Tôi có hiểu về các ngôn ngữ mà tôi đang học như HTML , css
+                        Đa số tôi học và tìm hiểu qua Google và Youtube. Tôi hiểu
+                        thêm về thứ mà tôi đang tìm kiếm , hi vọng sau này kĩ năng
+                        tôi sẽ cao hơn và tiến bộ hơn
+                    </p>
+                    <div class="list__info-skill">
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                Graphics Design
+                                <span class="design-skill">80%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__design"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                Photoshop
+                                <span class="photoshop-skill">40%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__photoshop"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                Web Development
+                                <span class="web-skill">50%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__web"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                Data Analysis
+                                <span class="data-skill">0%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__data"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                HTML & CSS
+                                <span class="html-skill">60%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__html"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+
+                        <div class="info__skil-item">
+                            <div class="skill__info">
+                                WordPress
+                                <span class="wordpress-skill">0%</span>
+                            </div>
+                            <div class="bar__float"> <!--Thanh bar nổi-->
+                                <div class="bar__sank bar__wordpress"></div> <!--Thanh bar chìm-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner__slogan">
+            <p>Nếu bạn thích hãy thực hiện nó , đừng chần chừ</p>
+            <button class="btn__slogan">Hire me</button>
+        </div> 
+        <div class="library__images">
+            <div class="library__title">
+                <h3>Thư viện của tôi</h3>
+                <p>Nơi này lưu trữ những kỉ niệm đẹp mà tôi từng trải qua</p>
+            </div>
+
+            <!-- TAB__IMAGES--- -->
+            <div class="tab">
+                <button class="tablinks" onclick="openImage(event, 'All')">All</button>
+                <button class="tablinks" onclick="openImage(event, 'Graphic')">Graphic</button>
+                <button class="tablinks" onclick="openImage(event, 'Design')">Design</button>
+                <button class="tablinks" onclick="openImage(event, 'Mockups')">Mockups</button>
+            </div>
+
+            <div id="All" class="tabcontent" style="visibility: visible;">
+                <div class="all__img-item all__img-item--1">
+                    <img src="./images/104659315_2520369088276595_5119155072434004532_o.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Buổi Họp Mặt TPM6</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Quán Nhậu : Dân dã</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--2">
+                    <img src="./images/119792226_2601580776822092_5061214380301359240_o.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bạn không thân :v</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Cafe Quang Trung</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--3">
+                    <img src="./images/75472749_2335411643439008_8558479217891737600_o.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>SunWorld</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>SunWorld Đà Nẵng</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--4">
+                    <img src="./images/83117015_2403251916654980_3157006798867660800_o.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Đi Phượt</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Hòn Yến, Phú Yên</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--5">
+                    <img src="./images/84289995_2400849676895204_2795776070471647232_n.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Dịp Tết</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>CaFe cùng 12C7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--6">
+                    <img src="./images/95838884_2486632698316901_178091819656019968_o.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Cafe cùng gia đình</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Phú Yên</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--7">
+                    <img src="./images/portfolio_07.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--8">
+                    <img src="./images/portfolio_08.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--9">
+                    <img src="./images/portfolio_10.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+            <div id="Graphic" class="tabcontent">
+                <div class="all__img-item all__img-item--1">
+                    <img src="./images/portfolio_05.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--2">
+                    <img src="./images/portfolio_05.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--3">
+                    <img src="./images/portfolio_07.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+            <div id="Design" class="tabcontent">
+                <div class="all__img-item all__img-item--1">
+                    <img src="./images/portfolio_04.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--2">
+                    <img src="./images/portfolio_02.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--3">
+                    <img src="./images/portfolio_03.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Mockups" class="tabcontent">
+                <div class="all__img-item all__img-item--1">
+                    <img src="./images/portfolio_06.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--2">
+                    <img src="./images/portfolio_01.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="all__img-item all__img-item--3">
+                    <img src="./images/portfolio_04.jpg" alt="">
+                    <div class="img__title-item">
+                        <div class="name-img-item">
+                            <h3>Bootstrap 3+</h3>
+                        </div>
+                        <div class="all__btn">
+                            <div class="all__btn-item">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="all__btn-item">
+                                <i class="fas fa-link"></i>
+                            </div>
+                        </div>
+                        <div class="all__category">
+                            <p>Graphic, print</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="typed.js"></script>
+    <!-- Chữ chạy -->
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+                'Designer',
+                'FrontEnd Developer'    
+            ],
+            typeSpeed:90,
+            backSpeed:60,
+            loop:true
+        });
+    </script>
+    <script type="text/javascript">
+        window.addEventListener("scroll",function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+    </script>
+
+    <!-- ------------TAB__CONTENT----------- -->
+    <script>
+        function openImage(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.visibility = "hidden";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.visibility = "visible";
+          evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>
